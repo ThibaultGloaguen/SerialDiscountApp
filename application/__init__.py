@@ -5,8 +5,8 @@ import os
 
 
 app = Flask(__name__,
-            static_folder="../templates/dist/static",
-            template_folder="../templates/dist")
+            static_folder="../templates/static",
+            template_folder="../templates")
 CORS(app)
 
 app.config.update(dict(
