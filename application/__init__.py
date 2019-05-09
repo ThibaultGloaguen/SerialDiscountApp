@@ -3,10 +3,9 @@ from flask_cors import CORS
 import pickledb
 import os
 
-
 app = Flask(__name__,
-            static_folder="../templates/static",
-            template_folder="../templates")
+            static_folder="../frontend/dist/static",
+            template_folder="../frontend/dist")
 CORS(app)
 
 app.config.update(dict(
